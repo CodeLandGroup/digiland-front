@@ -1,0 +1,52 @@
+.Header-top img{
+    max-width: 100%;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.navbar i{
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar-right ul{
+  display: flex;
+  align-items: center;
+ 
+}
+.navbar-right ul li{
+  display: flex;
+  margin: 1rem;
+}
+.navbar-right ul li i{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+
+
+.navbar-left{
+  display: flex;
+  font-weight: 700;
+}
+.navbar-left div{
+  margin: 1rem;
+
+}
+.navbar-left .login{
+ display: flex;
+ align-items: center;
+ color: #E94747;
+}
+.navbar-left .login i{
+  margin-left: .5rem;
+}
+.navbar-left .icons i{
+  color: #E94747;
+   padding-left: 1.5rem;
+}
