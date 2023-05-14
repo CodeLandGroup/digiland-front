@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .navbar i {
@@ -30,9 +30,13 @@
   display: flex;
   align-items: center;
   margin: 1rem;
-  opacity: .7;
+  opacity: .5;
 }
-
+.navbar-item:hover{
+  color: var(--primary-color);
+  opacity: 1;
+  cursor: pointer;
+}
 .navbar-item i{
   margin-left: .5rem;
 }
@@ -42,7 +46,6 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  font-weight: 700;
 }
 
 .navbar-left div {
@@ -51,13 +54,13 @@
 .navbar-login {
   display: flex;
   align-items: center;
-  color: #E94747;
+  color: var(--primary-color);
 }
 .navbar-login i {
   margin-left: .5rem;
 }
 
 .navbar-icons i {
-  color: #E94747;
-  padding-left: 1.5rem;
+  color: var(--primary-color);
+  margin-left: 1.5rem;
 }

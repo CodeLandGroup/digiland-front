@@ -1,3 +1,7 @@
+:root{
+    --primary-color : #E94747;
+}
+
 /*#region Display */
 .d-none {
     display: none;
