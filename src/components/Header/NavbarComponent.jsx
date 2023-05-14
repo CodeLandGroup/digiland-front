@@ -12,7 +12,7 @@ export default function NavbarComponent() {
   return (
     <div  className='navbar container'>
                 <div className='navbar-right'>
-                    <ul>
+                    <ul className='navbar-list'>
                         <li>
                             <img src={require('../../assets/images/dgland.svg').default} alt="" />
                         </li>
