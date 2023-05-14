@@ -10,10 +10,10 @@ import { Container } from '@mui/material'
 
 export default function NavbarComponent() {
   return (
-    <Container maxWidth="sx" className='navbar'>
+    <div  className='navbar container'>
                 <div className='navbar-right'>
-                    <ul className='navbar-list'>
-                        <li className='navbar-logo'>
+                    <ul>
+                        <li>
                             <img src={require('../../assets/images/dgland.svg').default} alt="" />
                         </li>
                         <li className='navbar-item'>
@@ -46,6 +46,6 @@ export default function NavbarComponent() {
                        <i><SlBasket /></i>
                     </div>
                 </div>
-            </Container>
+            </div>
   )
 }
