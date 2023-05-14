@@ -1,52 +1,63 @@
-.Header-top img{
-    max-width: 100%;
+.Header-top img {
+  max-width: 100%;
 }
-.navbar{
-  display: flex;
+
+/*Navbar styles*/
+.navbar {
+  display: flex !important;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 1.2rem;
   font-weight: 400;
 }
-.navbar i{
+
+.navbar i {
   font-weight: bold;
   font-size: 1.4rem;
 }
 
-.navbar-right ul{
+
+/* Navbar Right Styles*/
+.navbar-right .navbar-list {
   display: flex;
   align-items: center;
  
 }
-.navbar-right ul li{
+.navbar-logo{
+  padding-left: 1rem;
+}
+.navbar-item {
   display: flex;
+  align-items: center;
   margin: 1rem;
-}
-.navbar-right ul li i{
-  margin-left: 1rem;
-  font-weight: bold;
-  font-size: 1.4rem;
+  opacity: .7;
 }
 
-
-
-.navbar-left{
-  display: flex;
-  font-weight: 700;
-}
-.navbar-left div{
-  margin: 1rem;
-
-}
-.navbar-left .login{
- display: flex;
- align-items: center;
- color: #E94747;
-}
-.navbar-left .login i{
+.navbar-item i{
   margin-left: .5rem;
 }
-.navbar-left .icons i{
+
+
+/* Navbar Left Styles*/
+.navbar-left {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.navbar-left div {
+  margin: 1rem;
+}
+.navbar-login {
+  display: flex;
+  align-items: center;
   color: #E94747;
-   padding-left: 1.5rem;
+}
+.navbar-login i {
+  margin-left: .5rem;
+}
+
+.navbar-icons i {
+  color: #E94747;
+  padding-left: 1.5rem;
 }
