@@ -1,0 +1,153 @@
+/*#region Display */
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+/*#endregion */
+
+/*#region Padding */
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+/*#endregion */
+
+/*#region margin */
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/*#endregion */
+
+/*#region BackGround / Color */
+.background-default {
+    background: #6456fa;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.text-gray-2 {
+    color: #31373e;
+}
+
+.background-light {
+    background-color: #F2F2F2;
+}
+
+
+.background-white {
+    background-color: white;
+}
+
+.color-white {
+    color: white;
+}
+
+/* #endregion */
+
+/*#region Position */
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+/* #endregion */
+
+/* #region With hight */
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+/* #endregion */
+
+/* #region text-align */
+.text-center {
+    text-align: center;
+}
+/* #endregion */
+
+/* #region transition */
+.transition {
+    -webkit-transition: 500ms all cubic-bezier(0.39, 0.58, 0.57, 1);
+    transition: 500ms all cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.transition:hover {
+    -webkit-transition: 500ms all cubic-bezier(0.39, 0.58, 0.57, 1);
+    transition: 500ms all cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+/* #endregion */
+/*#region Container*/
+.container {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 400px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+/*#endregion */
