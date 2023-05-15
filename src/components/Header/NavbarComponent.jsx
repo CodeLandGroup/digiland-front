@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { FaRegNewspaper } from 'react-icons/fa'
 import { TbDiscount2 } from 'react-icons/tb'
 import { HiOutlineLogin, HiOutlineLocationMarker } from 'react-icons/hi'
 import { BsSearch } from 'react-icons/bs'
 import { SlBasket } from 'react-icons/sl'
+import CartComponent from './CartComponent'
 
 
 
 export default function NavbarComponent() {
+    const [showCart , setShowCart] = useState(false)
+
+    const showCartHandler = () => {
+        setShowCart(true)
+    }
+    const hideCartHandler = () => {
+        setShowCart(false)
+    }
     return (
         <div className='navbar container'>
             <div className='navbar-right'>
@@ -46,7 +55,10 @@ export default function NavbarComponent() {
                 </div>
                 <div className='navbar-icons'>
                     <i><HiOutlineLocationMarker /></i>
-                    <i><SlBasket /></i>
+                    <i onMouseEnter={showCartHandler} onMouseLeave={hideCartHandler}><SlBasket />
+                    <CartComponent isActive={showCart}/>
+                    </i>
+                    
                 </div>
             </div>
         </div>
