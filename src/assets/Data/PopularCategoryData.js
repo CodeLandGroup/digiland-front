@@ -1,4 +1,4 @@
-export const PopularProductData = [
+export const PopularCategoryData = [
     {
         productName: 'هدفون و هندزفری',
         img: '../../assets/images/popular-product/image1.png',
