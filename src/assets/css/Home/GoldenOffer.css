@@ -1,0 +1,17 @@
+.golden-offer {
+    background-color: #e10a0a;
+}
+
+.golden-offer .title img {
+    max-width: 100%;
+    height: auto;
+}
+
+.golden-offer .title span {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 26px;
+    font-weight: 600;
+    align-self: center;
+    margin-right: 13px;
+}
