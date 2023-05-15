@@ -1,0 +1,26 @@
+.popular-product{
+    margin-top: 1.5rem;
+}
+.popular-items{
+    padding: 3rem 0;
+}
+
+.popular-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-image{
+    background-color: aqua;
+    border-radius: 50%;
+}
+.item-image img{
+    width: 100%;
+    transition: all .5s ;
+ }
+ .item-image img:hover{
+    transform: translateY(-40px);
+ }
+.item-name{
+    margin-top: 1rem;
+}
