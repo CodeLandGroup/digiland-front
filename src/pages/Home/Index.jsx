@@ -1,12 +1,12 @@
 import React from 'react'
 import HeaderSliderComponent from '../../components/Home/HeaderSliderComponent'
-import PopularProductComponent from '../../components/Home/PopularProductComponent'
+import PopularCategorieComponent from '../../components/Home/PopularCategories/PopularCategorieComponent'
 
 export default function Home() {
     return (
         <>
             <HeaderSliderComponent />
-            <PopularProductComponent />
+            <PopularCategorieComponent />
         </>
     )
 }
