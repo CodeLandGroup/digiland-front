@@ -25,6 +25,11 @@
   text-align: inherit;
   right: 1%;
 }
+
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #e10a0a;
+}
+
+.golden-slider span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
 }
