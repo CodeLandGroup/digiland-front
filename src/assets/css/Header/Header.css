@@ -1,17 +1,19 @@
-.Header-top img {
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+}
+.header-top img {
   max-width: 100%;
 }
-
 /*Navbar styles*/
 .navbar {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  width: 100%;
-  position:sticky;
-  top: 0;
-  z-index: 999;
   background-color: white;
 }
 

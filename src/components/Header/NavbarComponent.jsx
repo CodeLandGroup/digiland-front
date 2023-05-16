@@ -39,8 +39,6 @@ export default function NavbarComponent() {
                     </li>
                 </ul>
             </div>
-          
-
             <div className='navbar-left'>
                 <div className='navbar-search'>
                     <input type="text" placeholder='جستجو...' />
