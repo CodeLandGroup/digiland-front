@@ -1,0 +1,26 @@
+.image-cover .image-cover-item {
+    justify-content: space-between;
+
+}
+
+.image-cover .image-cover-item .item {
+    border-radius: 15px;
+    width: 395px;
+    height: 275px;
+}
+
+.image-cover .image-cover-item .item .item-title {
+    bottom: 0;
+    align-items: center;
+    height: 60px;
+}
+
+.image-cover .image-cover-item .item .item-title {
+    font-weight: 600;
+}
+.image-cover .image-cover-item .item:hover img{
+    filter: blur(2px);
+}
+.image-cover .image-cover-item .item:hover .item-title {
+    background-color: #131a1e;
+}
