@@ -4,6 +4,7 @@ import PopularCategorieComponent from '../../components/Home/PopularCategories/P
 import GoldenOfferCopmonent from '../../components/Home/GoldenOffer/GoldenOfferCopmonent'
 import ImageCoverComponent from '../../components/Home/ImageCover/ImageCoverComponent'
 import PopularMobilesComponent from '../../components/Home/PopularMobiles/PopularMobilesComponent'
+import PopularAccessoriesComponent from '../../components/Home/PopularAccessories/PopularAccessoriesComponent'
 import { ImageCoverComputerLaptopData, ImageCoverData, ImageCoverVideoAudioData } from '../../assets/Data/ImageCoverItemData'
 import NewsComponent from '../../components/Home/NewsSection/NewsComponent'
 export default function Home() {

@@ -19,7 +19,7 @@ export default function PopularMobilesComponent() {
     return (
      
             <div className='popular-mobiles'>
-                <Title2Product />
+                <Title2Product  titleName="محبوبترین موبایل ها"/>
 
                 <div className='popularMobiles-slider container overflow-hidden'>
                     <Swiper
