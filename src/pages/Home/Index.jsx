@@ -11,9 +11,11 @@ export default function Home() {
             <HeaderSliderComponent />
             <PopularCategorieComponent />
             <GoldenOfferCopmonent />
-            <ImageCoverComponent data={ImageCoverData} titleName="گوشی مبایل" >
+            <ImageCoverComponent data={ImageCoverData} titleName="گوشی موبایل" >
             </ImageCoverComponent>
             <PopularMobilesComponent />
+       
+          
         </>
     )
 }

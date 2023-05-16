@@ -11,7 +11,7 @@ import '../../../assets/css/Home/GoldenOffer.css'
 // import required modules
 import { FreeMode, Pagination } from "swiper";
 import { productData } from '../../../assets/Data/ProductData'
-import SliderItemComponent from './SliderItemComponent';
+import SliderItemComponent from '../SliderItemComponent';
 
 export default function GoldenOfferCopmonent() {
     console.log(productData);
