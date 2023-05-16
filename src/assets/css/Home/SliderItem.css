@@ -98,6 +98,7 @@
     transition-duration: .5s;
     width: 180px;
 }
+
 .slider-item .item:hover .shadow-product {
     height: 8px;
     margin-top: 8px;
@@ -106,4 +107,9 @@
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     text-align-last: center;
     bottom: -2px;
+}
+
+.popular-mobiles .swiper-slide {
+    width: 248px !important;
+    margin-left: 40px !important;
 }

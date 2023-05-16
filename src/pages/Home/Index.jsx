@@ -4,17 +4,18 @@ import PopularCategorieComponent from '../../components/Home/PopularCategories/P
 import GoldenOfferCopmonent from '../../components/Home/GoldenOffer/GoldenOfferCopmonent'
 import ImageCoverComponent from '../../components/Home/ImageCover/ImageCoverComponent'
 import PopularMobilesComponent from '../../components/Home/PopularMobiles/PopularMobilesComponent'
-import { ImageCoverData } from '../../assets/Data/ImageCoverItemData'
+import { ImageCoverComputerLaptopData, ImageCoverData, ImageCoverVideoAudioData } from '../../assets/Data/ImageCoverItemData'
 export default function Home() {
     return (
         <>
             <HeaderSliderComponent />
             <PopularCategorieComponent />
             <GoldenOfferCopmonent />
-            <ImageCoverComponent data={ImageCoverData} titleName="گوشی موبایل" >
-            </ImageCoverComponent>
+            <ImageCoverComponent data={ImageCoverData} titleName="گوشی موبایل" />
             <PopularMobilesComponent />
-       
+            <ImageCoverComponent data={ImageCoverVideoAudioData} titleName="صوتی تصویری" />
+            <ImageCoverComponent data={ImageCoverComputerLaptopData} titleName="کامپیوتر لب تاب" />
+
           
         </>
     )
