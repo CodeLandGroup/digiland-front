@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SliderItemComponent(props) {
     return (
-        <div className='slider-item w-100 h-100'>
+        <div className='slider-item w-100 h-100 overflow-hidden'>
             <a href="#">
                 <div className='item position-relative d-flex'>
                     <div className='item-hover background-white position-absolute transition'></div>
