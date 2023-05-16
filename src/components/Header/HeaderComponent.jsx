@@ -3,14 +3,14 @@ import '../../assets/css/Header/Header.css'
 import NavbarComponent from './NavbarComponent'
 
 export default function HeaderComponent() {
-    const [navbarDisplay,  setNavbarDisplay] = useState("block")
+    const [navbarDisplay,  setNavbarDisplay] = useState("60px")
     useEffect(()=>{
         function handleScroll (){
            const scrollPosition =  window.pageYOffset
            if(scrollPosition >= 150){
-            setNavbarDisplay("none")
+            setNavbarDisplay("0px")
            }else if(scrollPosition < 100){
-            setNavbarDisplay("block")
+            setNavbarDisplay("60px")
            }
           
            
@@ -23,8 +23,8 @@ export default function HeaderComponent() {
     },[])
     return (
         <div className='header' >
-            <div className='header-top' style={{ display: navbarDisplay }}>
-                <img src={require('../../assets/images/header-image.jpeg')} alt="" />
+            <div className='header-top'>
+                <img src={require('../../assets/images/header-image.jpeg')} alt="" className='transition w-100'  style={{ height: navbarDisplay }}/>
             </div>
       
             <NavbarComponent />
