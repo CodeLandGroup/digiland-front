@@ -25,7 +25,7 @@ export default function GoldenOfferCopmonent() {
                     </div>
                 </a>
             </div>
-            <div className='golden-slider container'>
+            <div className='golden-slider container overflow-hidden'>
                 <Swiper
                     slidesPerView={5}
                     spaceBetween={30}
@@ -34,7 +34,7 @@ export default function GoldenOfferCopmonent() {
                         clickable: true,
                     }}
                     modules={[FreeMode, Pagination]}
-                    className="mySwiper  p-20"
+                    className="mySwiper  pt-20 pb-20"
                 >
                     {productData.map((item) => (
                         <SwiperSlide>

@@ -8,6 +8,9 @@
   font-size: 18px;
   background: #fff;
 
+  width: 248px !important;
+  margin-left: 40px !important;
+
   /* Center slide text vertically */
   display: flex;
   justify-content: center;

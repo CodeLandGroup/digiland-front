@@ -21,7 +21,7 @@ export default function PopularMobilesComponent() {
             <div className='popular-mobiles'>
                 <Title2Product />
 
-                <div className='popularMobiles-slider container'>
+                <div className='popularMobiles-slider container overflow-hidden'>
                     <Swiper
                         slidesPerView={5}
                         spaceBetween={60}
@@ -30,7 +30,7 @@ export default function PopularMobilesComponent() {
                             clickable: true,
                         }}
                         modules={[FreeMode, Pagination]}
-                        className="mySwiper  p-20"
+                        className="mySwiper  pt-20 pb-20"
                     >
                         {productData.map((item) => (
                             <SwiperSlide>
