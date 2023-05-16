@@ -7,7 +7,8 @@ import PopularCategorieCover from './PopularCategorieCover'
 import '../../../assets/css/Home/PopularCategorie.css'
 // import mui Component
 import {Grid} from '@mui/material'
-
+// import data file
+import { PopularCategoryData } from '../../../assets/Data/PopularCategoryData'
 
 export default function PopularProductComponent() {
     return (
@@ -15,28 +16,15 @@ export default function PopularProductComponent() {
             <TitleProdoct titleName='دسته بندی پر بازدید' />
             <div className='popular-items'>
                 <Grid container spacing={4} columns={14}>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                    <Grid item xs={2}>
-                    <PopularCategorieItem />
-                    </Grid>
-                 
+                    {
+                        PopularCategoryData.map( item => (
+                            <Grid item xs={2}>
+                            <PopularCategorieItem key={item.id} data={item}/>
+                            </Grid>
+                        ))
+                    }
+                  
+
                 </Grid>
             </div>
 
