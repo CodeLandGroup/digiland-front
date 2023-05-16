@@ -1,0 +1,22 @@
+.news-section {
+  margin-top: 4rem;
+}
+.news-items{
+  margin-top: 2rem;
+}
+.news-item {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: .5rem;
+}
+.news-item h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
