@@ -6,9 +6,7 @@ import ImageCoverItem from './ImageCoverItemComponent'
 
 
 export default function ImageCoverComponent(props) {
-    let coverItem = [];
-    if (props.itemType == "ImageCoverData")
-        coverItem = ImageCoverData
+  
 
     return (
         <div className='image-cover mt-20 p-10'>
@@ -16,7 +14,7 @@ export default function ImageCoverComponent(props) {
 
             <div className='image-cover-item container d-flex w-100 mt-20'>
                 {
-                    coverItem.map((item) => (
+                    props.data.map((item) => (
                         <ImageCoverItem item={item} />
                     ))
                 }
