@@ -20,7 +20,7 @@ export default function Home() {
             <ImageCoverComponent data={ImageCoverVideoAudioData} titleName="صوتی تصویری" />
             <TrailerComponent />
             <ImageCoverComponent data={ImageCoverComputerLaptopData} titleName="کامپیوتر لب تاب" />
-           
+           <PopularAccessoriesComponent />
 
 
         </>
