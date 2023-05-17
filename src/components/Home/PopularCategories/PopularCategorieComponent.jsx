@@ -9,7 +9,7 @@ import '../../../assets/css/Home/PopularCategorie.css'
 import {Grid} from '@mui/material'
 // import data file
 import { PopularCategoryData } from '../../../assets/Data/PopularCategoryData'
-
+import { PopularCategorieCoverData } from '../../../assets/Data/PopularCategoryData'
 export default function PopularProductComponent() {
     return (
         <div className='popular-Categorie container'>
@@ -30,12 +30,14 @@ export default function PopularProductComponent() {
 
             <div className='popular-cover'>
                 <Grid container spacing={2} >
-                    <Grid item xs={6}>
-                    <PopularCategorieCover />
-                    </Grid>
-                    <Grid item xs={6}>
-                    <PopularCategorieCover />
-                    </Grid>
+                    {
+                        PopularCategorieCoverData.map(item => (
+                            <Grid item xs={6}>
+                            <PopularCategorieCover key={item.id} data={item} />
+                            </Grid>
+                        ))
+                    }
+                 
                 </Grid>
             </div>
           

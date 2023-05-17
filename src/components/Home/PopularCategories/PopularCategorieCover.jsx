@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function PopularCategorieCover() {
+export default function PopularCategorieCover(props) {
   return (
     <div className='cover'>
-      <img src={require('../../../assets/images/popular-product/cover/cover1.jpeg')} alt="" />
+      <img src={props.data.img} alt="" />
     </div>
   )
 }

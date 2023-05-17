@@ -42,3 +42,13 @@ export const PopularCategoryData = [
         backColor: '#76e87c'
     },
 ]
+export const PopularCategorieCoverData = [
+    {
+        id: 1,
+        img: require('../images/popular-product/cover/cover1.jpeg')
+    },
+    {
+        id: 1,
+        img: require('../images/popular-product/cover/cover2.jpeg')
+    }
+]
