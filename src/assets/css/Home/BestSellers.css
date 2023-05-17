@@ -1,0 +1,24 @@
+.bestSellers-section{
+  background-image: url('../../images/BestSellers/BackGround.jpg');
+  
+}
+.bestSellesr-header img{
+    width: 100%;
+    margin-top: 2rem;
+}
+.bestSellesrs-items{
+    margin-top: 1rem;
+}
+.bestSellesrs-btn{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.bestSellesrs-btn button{
+    padding: 1rem 5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #E10A0A;
+    border: none;
+}

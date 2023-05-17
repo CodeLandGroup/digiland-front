@@ -8,6 +8,7 @@ import PopularAccessoriesComponent from '../../components/Home/PopularAccessorie
 import TrailerComponent from '../../components/Home/TrailerComponent'
 import { ImageCoverComputerLaptopData, ImageCoverData, ImageCoverVideoAudioData } from '../../assets/Data/ImageCoverItemData'
 import NewsComponent from '../../components/Home/NewsSection/NewsComponent'
+import BestSellersComponent from '../../components/Home/BestSellers/BestSellersComponent'
 export default function Home() {
     return (
         <>
@@ -21,7 +22,7 @@ export default function Home() {
             <TrailerComponent />
             <ImageCoverComponent data={ImageCoverComputerLaptopData} titleName="کامپیوتر لب تاب" />
            <PopularAccessoriesComponent />
-
+            <BestSellersComponent />
 
         </>
     )
