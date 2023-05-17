@@ -16,7 +16,7 @@ export default function NavbarComponent() {
 
     return (
         <>
-        <div className='navbar container'>
+        <div className='navbar container position-relative'>
             <div className='navbar-right'>
                 <ul className='navbar-list'>
                     <li>
