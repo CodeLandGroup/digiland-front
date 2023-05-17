@@ -1,0 +1,16 @@
+.footer{
+    border-top: 1px solid gray;
+}
+.footer .item-list{
+    justify-content: space-between;
+}
+.footer .footer-item .title{
+    font-weight: 700;
+    font-size: 14px;
+}
+.footer .line{
+    height: 1px;
+    background: #80808040;
+    left: 0;
+    bottom: 57px;
+}
