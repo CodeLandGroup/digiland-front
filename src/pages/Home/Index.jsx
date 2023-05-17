@@ -9,7 +9,6 @@ import TrailerComponent from '../../components/Home/TrailerComponent'
 import { ImageCoverComputerLaptopData, ImageCoverData, ImageCoverVideoAudioData } from '../../assets/Data/ImageCoverItemData'
 import NewsComponent from '../../components/Home/NewsSection/NewsComponent'
 import BestSellersComponent from '../../components/Home/BestSellers/BestSellersComponent'
-import FooterComponent from '../../components/Footer/FooterComponent'
 
 export default function Home() {
     return (
