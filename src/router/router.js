@@ -1,15 +1,11 @@
-import { createBrowserRouter } from "react-router-dom"
+import CategoriesPage from "../pages/Categories/CategoriesPage";
 import Home from "../pages/Home/Index"
 
-const routers = [
-    {
-        basename: '/',
-        path: '/',
-        element: <Home />
-    },
+const routes = [
+    { path: '/' , element: <Home />  },
+    { path: '/categories' , element: <CategoriesPage />}
 ]
 
 
-const router = createBrowserRouter(routers)
 
-export default router;
+export default routes;
