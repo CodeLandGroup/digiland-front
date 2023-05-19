@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../assets/css/productList.css'
+import '../../../assets/css/Categories/productList.css'
 import ProductOrderbyComponent from './ProductOrderbyComponent'
 import ProductItemComponent from './ProductItemComponent'
 import { Grid, Pagination } from '@mui/material'
@@ -14,7 +14,6 @@ export default function ProductListComponent() {
                 <ProductItemComponent />
                 <ProductItemComponent />
                 <ProductItemComponent />
-
             </Grid>
             <Pagination count={10}  className='mt-30 d-flex mb-20' />
         </div>
