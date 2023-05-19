@@ -75,6 +75,11 @@
     width: 100px;
     margin: .5rem;
 }
+
+.filter-item .filter-list::-webkit-scrollbar {
+    width: 4px ;
+}
+
 .start-price{
    
 }
