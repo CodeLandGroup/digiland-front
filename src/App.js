@@ -8,6 +8,7 @@ export default function App() {
   let router = useRoutes(routes)
   return (
     <div className="App">
+      <HeaderComponent />
             {router}
       <FooterComponent />
     </div>

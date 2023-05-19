@@ -14,7 +14,6 @@ import HeaderComponent from '../../components/Header/HeaderComponent'
 export default function Home() {
     return (
         <>
-            <HeaderComponent />
             <HeaderSliderComponent />
             <PopularCategorieComponent />
             <GoldenOfferCopmonent />
