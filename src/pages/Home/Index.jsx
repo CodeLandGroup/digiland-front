@@ -9,10 +9,12 @@ import TrailerComponent from '../../components/Home/TrailerComponent'
 import { ImageCoverComputerLaptopData, ImageCoverData, ImageCoverVideoAudioData } from '../../assets/Data/ImageCoverItemData'
 import NewsComponent from '../../components/Home/NewsSection/NewsComponent'
 import BestSellersComponent from '../../components/Home/BestSellers/BestSellersComponent'
+import HeaderComponent from '../../components/Header/HeaderComponent'
 
 export default function Home() {
     return (
         <>
+            <HeaderComponent />
             <HeaderSliderComponent />
             <PopularCategorieComponent />
             <GoldenOfferCopmonent />
