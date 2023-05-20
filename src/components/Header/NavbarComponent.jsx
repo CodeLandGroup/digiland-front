@@ -7,12 +7,16 @@ import { BsSearch } from 'react-icons/bs'
 import { SlBasket } from 'react-icons/sl'
 import CartComponent from './CartComponent'
 import CategoriesComponent from './CategoriesComponent'
+import LoginModalComponent from './LoginModalComponent'
 
 
 
 export default function NavbarComponent() {
     const [showCart , setShowCart] = useState(false)
     const [showCategorie , setShowCategorie] = useState(false)
+    const [openModal, setOpenModal] = useState(false);
+    const handleOpen = () => setOpenModal(true);
+    const handleClose = () => setOpenModal(false);
 
     return (
         <>
@@ -46,7 +50,7 @@ export default function NavbarComponent() {
                         <BsSearch />
                     </span>
                 </div>
-                <div className='navbar-login'>
+                <div className='navbar-login' onClick={handleOpen}>
                     <i><HiOutlineLogin /></i>
                     <h3>وارد شوید</h3>
                 </div>
@@ -57,8 +61,8 @@ export default function NavbarComponent() {
                     </i>
                     
                 </div>
-              
             </div>
+            <LoginModalComponent isActive={openModal} handleClose={handleClose}/>
         </div>
           
           </>

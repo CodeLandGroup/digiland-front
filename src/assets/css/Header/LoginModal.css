@@ -1,0 +1,45 @@
+.login-modal{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    padding: 2rem;
+   text-align: center;
+   border-radius: .5rem;
+}
+.login-input{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.login-input input{
+    width: 50%;
+    margin: 1.5rem auto;
+   padding: 1rem 2rem;
+   border: 1px solid rgba(0, 0, 0, .2);
+   border-radius: .5rem;
+    font-size: 1.2rem;
+    transition: border .1s ease-in-out;
+}
+.login-input input:focus{
+   content: 'شماره همراه';
+   border: 2px solid var(--primary-color);
+}
+.login-input button{
+   background-color: var(--primary-color);
+   color: white;
+   font-size: 1.2rem;
+    padding: 1rem 6rem;
+    border-radius: .5rem;
+    border: none;
+    margin:  auto;
+    margin-bottom: 2rem;
+}
+
+.close-btn{
+    position: absolute;
+    left: 10%;
+}
