@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Grid } from '@mui/material'
 import { MdOutlineFormatIndentIncrease } from 'react-icons/md'
+import { useDispatch, useSelector } from 'react-redux'
+import { ProductFilter, productSliceData } from '../../../Redux/Slice/Product/ProductSlice'
 
 export default function ProductOrderbyComponent() {
     return (

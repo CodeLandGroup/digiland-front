@@ -1,12 +1,15 @@
 import { Grid } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import ProductListComponent from './ProductList/ProductListComponent'
 import FilterCategorieComponent from './FilterCategorieComponent'
-import { useSearchParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { ProductFilter } from '../../Redux/Slice/Product/ProductSlice';
 
 export default function CategorieComponent() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const dispatch = useDispatch();
+  const product = dispatch(ProductFilter());
 
+console.log(product);
   return (
     <div className='categorie-section container'>
       <Grid container>
