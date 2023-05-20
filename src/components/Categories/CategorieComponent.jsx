@@ -9,7 +9,6 @@ export default function CategorieComponent() {
   const dispatch = useDispatch();
   const product = dispatch(ProductFilter());
 
-console.log(product);
   return (
     <div className='categorie-section container'>
       <Grid container>
