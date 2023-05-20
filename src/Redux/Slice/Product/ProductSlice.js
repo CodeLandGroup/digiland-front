@@ -8,6 +8,6 @@ export const ProductSlice = createSlice({
     }
 });
 
-export const {  } = ProductSlice.actions
-export const productSliceData = (state) => state.ProductSlice
+export const { } = ProductSlice.actions
+export const productSliceData = (state) => state.productReducer
 export default ProductSlice.reducer
