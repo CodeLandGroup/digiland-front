@@ -4,7 +4,7 @@ import Slider from '@mui/material/Slider';
 import Box from '@mui/material/Box';
 
 export default function FilterItemComponent(props) {
-  const [value, setValue] = React.useState([0, 50]);
+  const [value, setValue] = React.useState([0, 1200000]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -26,11 +26,12 @@ export default function FilterItemComponent(props) {
               {
 
                 props.data.map((item) => (
-                  <li>
+                  <li >
                     <Checkbox
                       inputProps={{ 'aria-label': 'controlled' }}
+                      checked={item.isActive}
                     />
-                    <label htmlFor="">{item}</label>
+                    <label htmlFor="">{item.brand}</label>
                   </li>
                 )
                 )
@@ -51,6 +52,7 @@ export default function FilterItemComponent(props) {
                         <li>
                           <Checkbox
                             inputProps={{ 'aria-label': 'controlled' }}
+                            checked={item.isActive}
                           />
                           <label htmlFor="">{item.colorName}</label>
                         </li>
