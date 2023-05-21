@@ -9,8 +9,6 @@ import CartComponent from './CartComponent'
 import CategoriesComponent from './CategoriesComponent'
 import LoginModalComponent from './LoginModalComponent'
 import { createSearchParams, Link, useNavigate } from 'react-router-dom'
-import { Link as ScrollLink } from 'react-scroll'
-import { useEffect } from 'react'
 
 export default function NavbarComponent() {
     const [showCart, setShowCart] = useState(false)
@@ -20,7 +18,7 @@ export default function NavbarComponent() {
     const handleClose = () => setOpenModal(false);
     const navigate = useNavigate()
 
-    
+
     function scrollToPosition(x, y) {
         window.scrollTo({
           left: x,
