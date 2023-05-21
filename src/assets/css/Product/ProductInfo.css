@@ -121,3 +121,19 @@
     font-size: 1.5rem;
     padding-left: .5rem;
 }
+
+/* slider styles */
+.Slide-Preview{
+    padding: 1rem;
+}
+.slider-bottom{
+    margin-top: 2rem;
+}
+.preview-item{
+    border: 1px solid rgb(136, 135, 135 , .4);
+    border-radius: .2rem;
+    transition: border .2s ease;
+}
+.preview-item:hover{
+    border-color: rgb(43, 43, 247);
+}
