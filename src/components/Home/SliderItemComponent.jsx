@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../../assets/css/Home/SliderItem.css'
 
 
 export default function SliderItemComponent(props) {
     return (
         <div className='slider-item w-100 h-100 overflow-hidden'>
-            <a href="#">
+            <Link to={`/product/:${props.item.id}`}>
                 <div className='item position-relative d-flex'>
                     <div className='item-hover background-white position-absolute transition'></div>
                     <div className='item-list text-center w-100 h-100 overflow-hidden'>
@@ -33,7 +34,7 @@ export default function SliderItemComponent(props) {
                         </div>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }
