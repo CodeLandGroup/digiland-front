@@ -1,25 +1,42 @@
-export const ColorFilterData =[
-    {
-      colorName : 'زرد',
-      colorCode : '#e5eb34'
-    },
-    {
-        colorName : 'قرمز',
-        colorCode : '#eb3434'
-      },
-      {
-        colorName : 'مشکی',
-        colorCode : '#0a0a0a'
-      },
-      {
-        colorName : 'بنفش',
-        colorCode : '#eb34d2'
-      },
+export const ColorFilterData = [
+  {
+    colorName: 'زرد',
+    colorNameEn: 'yellow',
+    colorCode: '#e5eb34',
+    isActive: false
+  },
+  {
+    colorName: 'قرمز',
+    colorNameEn: 'red',
+    colorCode: '#eb3434',
+    isActive: false
+
+  },
+  {
+    colorName: 'مشکی',
+    colorNameEn: 'black',
+    colorCode: '#0a0a0a',
+    isActive: false
+  },
+  {
+    colorName: 'بنفش',
+    colorNameEn: 'popular',
+    colorCode: '#eb34d2',
+    isActive: false
+
+  },
 ]
 
 export const BrandFilterData = [
-    'سامسونگ',
-    'نوکیا',
-    'اپل',
-    'هواوی',
+  {
+    brand: 'samsung',
+    isActive: false
+  },
+  {
+    brand: 'Apple',
+    isActive: false
+  }, {
+    brand: 'Xiaomi',
+    isActive: false
+  }
 ]
