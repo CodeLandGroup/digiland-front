@@ -1,0 +1,17 @@
+{
+  "short_name": "DigiLand",
+  "name": "DigiLand",
+  "icons": [
+    {
+      "src": "profile.png",
+      "sizes": "1000x1000",
+      "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}

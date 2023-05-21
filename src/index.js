@@ -6,6 +6,7 @@ import './assets/css/index.css'
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Redux/Store';
+import serviceWorkerDev from './ServiceWorkerDev';
 
 
 ReactDOM.render(
@@ -17,3 +18,5 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 );
+
+serviceWorkerDev();
