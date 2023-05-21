@@ -18,14 +18,16 @@ export default function NavbarComponent() {
     const handleClose = () => setOpenModal(false);
     const navigate = useNavigate()
 
-
+    const isHomePage = window.location.pathname === '/';
     function scrollToPosition(x, y) {
-        window.scrollTo({
-          left: x,
-          top: y,
-          behavior: 'smooth'
-        });
-      }
+        if (isHomePage) {
+            window.scrollTo({
+                left: x,
+                top: y,
+                behavior: 'smooth'
+            });
+        }
+    }
 
     function serchChange(obj) {
 
@@ -54,12 +56,12 @@ export default function NavbarComponent() {
                             </h3>
                             <CategoriesComponent isActive={showCategorie} />
                         </li>
-                        <li className='navbar-item' onClick={() =>  scrollToPosition(0,2400)}>
+                        <li className='navbar-item' onClick={() => scrollToPosition(0, 2400)}>
                             <i><FaRegNewspaper /></i>
                             <h3 >مجله دیجی لند</h3>
 
                         </li>
-                        <li className='navbar-item' onClick={() =>  scrollToPosition(0,800)}>
+                        <li className='navbar-item' onClick={() => scrollToPosition(0, 800)}>
                             <i><TbDiscount2 /></i>
                             <h3 >پیشنهاد طلایی</h3>
                         </li>
