@@ -29,7 +29,7 @@ export const ColorFilterData = [
 
 export const BrandFilterData = [
   {
-    brand: 'samsung',
+    brand: 'Samsung',
     isActive: false
   },
   {
