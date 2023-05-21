@@ -23,9 +23,10 @@ export default function ProductListComponent() {
             <ProductOrderbyComponent />
             <Grid container className='product background-light_grey p-5 mt-20'>
                 {
-                    product.slice((page - 1) * 10, (page - 1) * 10 + 10).map((item) => (
-                        <ProductItemComponent item={item} />
-                    ))
+                    product.length != 0
+                        ? product.slice((page - 1) * 10, (page - 1) * 10 + 10).map((item) => (
+                            <ProductItemComponent item={item} />
+                        )) : <h2 className='p-10 mt-10 mb-10 justify-center text-gray'>محصولی یافت نشد</h2>
                 }
             </Grid>
             <Pagination count={pageCount} page={page} className='mt-30 d-flex mb-20' onChange={pageChange} />
