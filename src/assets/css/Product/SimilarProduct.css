@@ -1,3 +1,8 @@
-.similar-product{
+.similar-product {
     margin: 3rem;
+}
+
+.similar-product .swiper-slide {
+    width: 230px !important;
+    margin-left: 60px;
 }
