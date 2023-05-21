@@ -9,18 +9,19 @@ export default function FilterItemComponent(props) {
   const [param, setParam] = useSearchParams(); // Get Prams
 
   function ChangeFilter(item) {
+    item.isActive = !item.isActive;
     if (item.brand != null) {
       if (param.get('brand') == null || param.get('brand') == '')
         param.set('brand', item.brand)
       else
-        param.set('brand', param.get('brand').includes(item.brand) ? param.get('brand').replace(item.brand, '-').replace(',-','')
+        param.set('brand', param.get('brand').includes(item.brand) ? param.get('brand').replace(item.brand, '-').replace(',-', '')
           : param.get('brand') + ',' + item.brand)
 
     } if (item.colorNameEn != null) {
       if (param.get('color') == null || param.get('color') == '')
         param.set('color', item.colorNameEn)
       else
-        param.set('color', param.get('color').includes(item.colorNameEn) ? param.get('color').replace(item.colorNameEn, '-').replace(',-','')
+        param.set('color', param.get('color').includes(item.colorNameEn) ? param.get('color').replace(item.colorNameEn, '-').replace(',-', '')
           : param.get('color') + ',' + item.colorNameEn)
 
     }
