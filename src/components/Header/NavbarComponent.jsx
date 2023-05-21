@@ -8,9 +8,9 @@ import { SlBasket } from 'react-icons/sl'
 import CartComponent from './CartComponent'
 import CategoriesComponent from './CategoriesComponent'
 import LoginModalComponent from './LoginModalComponent'
-import { createSearchParams, useNavigate } from 'react-router-dom'
-
-
+import { createSearchParams, Link, useNavigate } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
+import { useEffect } from 'react'
 
 export default function NavbarComponent() {
     const [showCart, setShowCart] = useState(false)
@@ -20,6 +20,14 @@ export default function NavbarComponent() {
     const handleClose = () => setOpenModal(false);
     const navigate = useNavigate()
 
+    
+    function scrollToPosition(x, y) {
+        window.scrollTo({
+          left: x,
+          top: y,
+          behavior: 'smooth'
+        });
+      }
 
     function serchChange(obj) {
 
@@ -37,7 +45,10 @@ export default function NavbarComponent() {
                 <div className='navbar-right'>
                     <ul className='navbar-list'>
                         <li>
-                            <img src={require('../../assets/images/dgland.svg').default} alt="" />
+                            <Link to='/'>
+                                <img src={require('../../assets/images/dgland.svg').default} alt="" />
+                            </Link>
+
                         </li>
                         <li className='navbar-item' onMouseEnter={() => setShowCategorie(true)} onMouseLeave={() => setShowCategorie(false)}>
                             <i><AiOutlineMenu /></i>
@@ -45,14 +56,14 @@ export default function NavbarComponent() {
                             </h3>
                             <CategoriesComponent isActive={showCategorie} />
                         </li>
-                        <li className='navbar-item'>
+                        <li className='navbar-item' onClick={() =>  scrollToPosition(0,2400)}>
                             <i><FaRegNewspaper /></i>
-                            <h3>مجله دیجی لند</h3>
+                            <h3 >مجله دیجی لند</h3>
 
                         </li>
-                        <li className='navbar-item'>
+                        <li className='navbar-item' onClick={() =>  scrollToPosition(0,800)}>
                             <i><TbDiscount2 /></i>
-                            <h3>پیشنهاد طلایی</h3>
+                            <h3 >پیشنهاد طلایی</h3>
                         </li>
                     </ul>
                 </div>
