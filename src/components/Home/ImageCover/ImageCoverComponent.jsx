@@ -3,6 +3,7 @@ import TitleProdoct from '../TitleProdoct'
 import '../../../assets/css/Home/ImageCover.css'
 import { ImageCoverData } from '../../../assets/Data/ImageCoverItemData'
 import ImageCoverItem from './ImageCoverItemComponent'
+import { Link } from 'react-router-dom'
 
 
 export default function ImageCoverComponent(props) {
@@ -15,7 +16,10 @@ export default function ImageCoverComponent(props) {
             <div className='image-cover-item container d-flex w-100 mt-20'>
                 {
                     props.data.map((item) => (
-                        <ImageCoverItem item={item} />
+                        <Link to='/categories'>
+                          <ImageCoverItem item={item} />
+                        </Link>
+                      
                     ))
                 }
             </div>

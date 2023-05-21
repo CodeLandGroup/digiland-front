@@ -6,10 +6,11 @@ import PopularCategorieCover from './PopularCategorieCover'
 // import style css
 import '../../../assets/css/Home/PopularCategorie.css'
 // import mui Component
-import {Grid} from '@mui/material'
+import { Grid } from '@mui/material'
 // import data file
 import { PopularCategoryData } from '../../../assets/Data/PopularCategoryData'
 import { PopularCategorieCoverData } from '../../../assets/Data/PopularCategoryData'
+import { Link } from 'react-router-dom'
 export default function PopularProductComponent() {
     return (
         <div className='popular-Categorie container'>
@@ -17,13 +18,16 @@ export default function PopularProductComponent() {
             <div className='popular-items'>
                 <Grid container spacing={4} columns={14}>
                     {
-                        PopularCategoryData.map( item => (
+                        PopularCategoryData.map(item => (
                             <Grid item xs={2}>
-                            <PopularCategorieItem key={item.id} data={item}/>
+                                <Link to='/categories'>
+                                    <PopularCategorieItem key={item.id} data={item} />
+                                </Link>
+
                             </Grid>
                         ))
                     }
-                  
+
 
                 </Grid>
             </div>
@@ -33,14 +37,14 @@ export default function PopularProductComponent() {
                     {
                         PopularCategorieCoverData.map(item => (
                             <Grid item xs={6}>
-                            <PopularCategorieCover key={item.id} data={item} />
+                                <PopularCategorieCover key={item.id} data={item} />
                             </Grid>
                         ))
                     }
-                 
+
                 </Grid>
             </div>
-          
+
         </div>
     )
 }

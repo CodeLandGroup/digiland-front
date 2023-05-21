@@ -3,6 +3,7 @@ import { Grid } from '@mui/material'
 import '../../../assets/css/Home/BestSellers.css'
 import SliderItemComponent from '../SliderItemComponent'
 import { BestSellersData } from '../../../assets/Data/BestSellers'
+import { Link } from 'react-router-dom'
 export default function BestSellersComponent() {
   return (
     <div className='bestSellers-section'>
@@ -24,7 +25,10 @@ export default function BestSellersComponent() {
                  </Grid>
               </div>
               <div className='bestSellesrs-btn'>
-                   <button>مشاهده همه</button>
+                <Link to='/categories'>
+                <button>مشاهده همه</button>
+                </Link>
+                   
               </div>
         </div>
     </div>
