@@ -45,11 +45,12 @@ export default function FilterItemComponent(props) {
           {
 
             props.data.map((item) => (
-              <li>
+              <li onClick={() => ChangeFilter(item)}>
                 <Checkbox
                   inputProps={{ 'aria-label': 'controlled' }}
+                  checked={item.isActive}
                 />
-                <label htmlFor="">{item}</label>
+                <label htmlFor="">{item.brand}</label>
               </li>
             )
             )
@@ -67,9 +68,10 @@ export default function FilterItemComponent(props) {
               props.data.map((item) => (
                 <>
                   <div>
-                    <li>
+                    <li onClick={() => ChangeFilter(item)}>
                       <Checkbox
                         inputProps={{ 'aria-label': 'controlled' }}
+                        checked={item.isActive}
                       />
                       <label htmlFor="">{item.colorName}</label>
                     </li>
