@@ -40,11 +40,12 @@ export const ProductSlice = createSlice({
 
                     }
                 })
+                if (checkBrand == param.get('brand').split(',').length)
+                    product = []
 
             }
             if (param.get('color') != null) { // check color param
                 param.get('color').split(',').forEach((item) => {
-
                     if (product.length == 0 && param.get('brand') == null) {
                         let p = productData.filter(x => x.color.includes(item));
                         p.forEach((item) => {
@@ -64,8 +65,7 @@ export const ProductSlice = createSlice({
 
                     }
                 })
-                if (checkColor == param.get('color').split(',').length
-                    || checkBrand == param.get('brand').split(',').length)
+                if (checkColor == param.get('color').split(',').length)
                     product = []
             }
             if (param.size == 0)

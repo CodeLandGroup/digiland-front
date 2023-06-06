@@ -25,6 +25,11 @@ export default function FilterItemComponent(props) {
           : param.get('color') + ',' + item.colorNameEn)
 
     }
+    if (param.get('brand') == '')
+      param.delete('brand')
+    if (param.get('color') == '')
+      param.delete('color')
+      
     setParam(param);
   }
 
